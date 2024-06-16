@@ -1,0 +1,81 @@
+.game {
+  padding: 50px 0;
+}
+
+.game__title {
+  text-align: center;
+}
+
+.game__player-result-block {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.game__player-result {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.game__player-result-title {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.game__player-result-success {
+  color: green;
+}
+
+.game__player-result-fail {
+  color: red;
+}
+
+.game__playing-field {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 224px;
+  margin: 0 auto;
+  padding: 10px;
+
+  background-color: green;
+}
+
+.game__playing-field-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.game__target {
+  width: 80px;
+  height: 80px;
+
+  background: url("../img/goblin.png") center center/contain no-repeat;
+
+  cursor: url(../img/hammer.png), auto;
+}
+
+.game__win {
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+
+  color: yellow;
+}
+
+.game__over {
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+
+  color: red;
+}
