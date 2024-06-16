@@ -65,7 +65,7 @@ export default class GamePlay {
       _element.remove();
       _successValue += 1;
       _success.textContent = _successValue;
-    } else {
+    } else if (_element.classList.contains("game__playing-field-cell")) {
       _failValue += 1;
       _fail.textContent = _failValue;
     }
